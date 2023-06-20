@@ -713,7 +713,7 @@ endif()
 # installation
 install(FILES
   ${PROJECT_BINARY_DIR}/StrumpackFortranCInterface.h
-  DESTINATION include)
+  DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 
 install(TARGETS strumpack EXPORT STRUMPACKTargets
   LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}

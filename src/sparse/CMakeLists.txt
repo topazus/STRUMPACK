@@ -17,7 +17,7 @@ install(FILES
   CompressedSparseMatrix.hpp
   CSRMatrix.hpp
   CSRGraph.hpp
-  DESTINATION include/sparse)
+  DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/sparse)
 
 
 if(STRUMPACK_USE_MPI)
@@ -36,7 +36,7 @@ if(STRUMPACK_USE_MPI)
 
   install(FILES
     CSRMatrixMPI.hpp
-    DESTINATION include/sparse)
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/sparse)
 endif()
 
 # TODO AWPMCombBLAS.hpp
